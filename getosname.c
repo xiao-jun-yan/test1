@@ -6,6 +6,6 @@ int getOsName(void){
     fp = popen("lsb_release -ds", "r");
     fgets(buffer, 50, fp);
     pclose(fp);
-    printf("Name of the OS is : %s",buffer);
+    printf("Name of the OS = %s",buffer);
     return 0;
 }
